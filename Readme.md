@@ -29,7 +29,7 @@ docker run -it --rm \
   -e COUCHDB_CLUSTER_NODES=10.0.1.1,10.0.1.2,10.0.1.3 \
   -e COUCHDB_USER=admin \
   -e COUCHDB_PASSWORD=secretRelaxingPassword \
-  tobyfoo/couchdb-cluster-manager
+  tobyfoo/couchdb-cluster-manager:latest
 ```
 - COUCHDB_CLUSTER_NODES is a comma-separated list of CouchDB nodes. Optionally you can include a port like so, 10.1.2.3:5984.
 - The COUCHDB_USER and COUCHDB_PASSWORD is the CouchDB instance's admin password, it should be the same for all CouchDB instances.
