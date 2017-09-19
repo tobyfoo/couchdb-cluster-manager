@@ -1,0 +1,29 @@
+{
+  "name": "couchdb-cluster-manager",
+  "version": "0.0.1",
+  "description": "Docker image that when run will initialize a set of couchdb instances to form a cluster.",
+  "main": "couchdb-cluster-manager.js",
+  "scripts": {
+    "start": "node couchdb-cluster-manager.js | node_modules/faucet/bin/cmd.js",
+    "test": "exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobyfoo/couchdb-cluster-manager.git"
+  },
+  "keywords": [
+    "couchdb",
+    "cluster"
+  ],
+  "author": "Toby (https://github.com/tobyfoo)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "faucet": "0.0.1",
+    "supertest": "^3.0.0",
+    "tape": "^4.8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/tobyfoo/couchdb-cluster-manager/issues"
+  },
+  "homepage": "https://github.com/tobyfoo/couchdb-cluster-manager#readme"
+}
